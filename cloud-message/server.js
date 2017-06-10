@@ -41,6 +41,11 @@ app.post('/cloud-message/push', (req, res) => {
 
     var body = _.pick(req.body, ['token','message']);
     var payload = {
+        notification : {
+            body : "MiLE",
+            title : body.message,
+            icon : "new"
+            },
         data: {
             title: body.message,
             time: "2:45"
