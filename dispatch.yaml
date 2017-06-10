@@ -1,0 +1,6 @@
+dispatch:
+  - url: '*/admin'
+    module: admin
+# Send all cloud messages traffic to the mobile frontend.
+  - url: "*/cloud-message/*"
+    service: cloud-message   
